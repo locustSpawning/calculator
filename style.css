@@ -16,7 +16,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    flex: 1;
     flex-wrap: wrap;
     border: 3px solid black;
     max-width: 650px;
@@ -27,6 +26,12 @@ body {
     box-shadow: 10px 10px;
     padding: 10px;
     background-color: #f4edf5;
+}
+
+#calc-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #left-items {
@@ -58,7 +63,6 @@ body {
 
 button {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    flex: 0;
     margin: 0px;
     font-size: 55px;
     width: 135px;
@@ -73,18 +77,18 @@ p {
 }
 
 .operator-buttons {
-    margin: 0px 0px 20px 10px;
+    margin: 0px 0px 20px 30px;
     max-width: 105px;
     height: 63.5px;
-    font-size: 45px;
+    font-size: 40px;
     
 }
 
 #back-space {
-    margin-top: 125px;
+    margin-top: 35px;
     margin-bottom: 40px;
     align-self: center;
-    height: 70px;
+    height: 68px;
 }
 
 #title {
