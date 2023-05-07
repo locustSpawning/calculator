@@ -29,7 +29,10 @@ let str = NaN;
 
 function divide(num1, num2) {
     result = num1 / num2;
-    if (result % 1 != 0){
+    if (num2 === 0){
+        result = "none";
+    }
+    else if (result % 1 != 0){
         result = result.toFixed(2);
     }
     return result;
@@ -83,7 +86,13 @@ function equalsClicked(operator){
     //console.log(num2);
     operate(operator, num1, num2);
     //console.log(result);
-    display.innerHTML = result;
+    if (result == "none"){
+        display.innerHTML = "000"; 
+    }
+    else{
+        display.innerHTML = result;
+    }
+    
 
 }
 
